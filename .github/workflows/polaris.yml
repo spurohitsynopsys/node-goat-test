@@ -14,6 +14,6 @@ jobs:
           polaris_server_url: ${{ secrets.POLARIS_SERVER_URL }}
           polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
           polaris_assessment_types: 'SCA'
-          polaris_reports_sarif_create: 'true'
+          polaris_reports_sarif_create: 'false'
           polaris_upload_sarif_report: 'true'
           github_token: ${{ secrets.GITHUB_TOKEN }}
