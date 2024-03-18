@@ -17,4 +17,6 @@ jobs:
           blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
           blackduck_reports_sarif_create: 'false'
           blackduck_upload_sarif_report: 'true'
+          blackduck_reports_sarif_file_path: '/Users/spurohit/Downloads/reports.sarif.json'
+          github_token: 'test'
           # github_token: ${{ secrets.GITHUB_TOKEN }}
