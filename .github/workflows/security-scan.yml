@@ -12,6 +12,7 @@ jobs:
         uses: synopsys-sig/synopsys-action@v1.8.0
         env:
           DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
+          BLACKDUCK_TRUST_CERT: true
         with:
           blackduck_url: ${{ secrets.BLACKDUCK_URL_VALID01 }}
           blackduck_token: ${{ secrets.BLACKDUCK_TOKEN_VALID01 }}
