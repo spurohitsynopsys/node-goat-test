@@ -1,7 +1,7 @@
-name: CI-Polaris-Basic 
+name: Black Duck Scan 
 on:
   push:
-    branches: [ main ]
+    branches: [ badges ]
 jobs:
   build:
     runs-on: [ self-hosted ]
