@@ -1,0 +1,18 @@
+name: CI-Polaris-Basic 
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: [ self-hosted ]
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v3
+      - name: Black Duck Scan
+        uses: synopsys-sig/synopsys-action@1.8.0
+        env:
+          DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
+        with:
+          blackduck_url: ${{ secrets.BLACKDUCK_URL_VALID01 }}
+          blackduck_token: ${{ secrets.BLACKDUCK_TOKEN_VALID01 }}
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
