@@ -8,14 +8,15 @@ jobs:
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
-      - name: Polaris Scan
+      - name: Black Duck Scan
         uses: synopsys-sig/synopsys-action@v1.9.0
         env:
           DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
         with:
-          blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          # blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          blackduck_url: ''
           blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
-          blackduck_reports_sarif_create: 'false'
+          # blackduck_reports_sarif_create: 'false'
           blackduck_upload_sarif_report: 'true'
           # blackduck_reports_sarif_file_path: '/Users/spurohit/Downloads/report.sarif.json'
           github_token: ''
