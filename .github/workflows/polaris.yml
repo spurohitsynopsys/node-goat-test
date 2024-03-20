@@ -13,9 +13,9 @@ jobs:
         env:
           DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
         with:
-          # blackduck_url: ${{ secrets.BLACKDUCK_URL }}
-          blackduck_url: ''
-          blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
+          blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          blackduck_token: ''
+          # blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
           # blackduck_reports_sarif_create: 'false'
           blackduck_upload_sarif_report: 'true'
           # blackduck_reports_sarif_file_path: '/Users/spurohit/Downloads/report.sarif.json'
