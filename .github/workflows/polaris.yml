@@ -15,9 +15,10 @@ jobs:
         with:
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_token: ''
+          include_diagnostics: true
           # blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
           # blackduck_reports_sarif_create: 'false'
-          blackduck_upload_sarif_report: 'true'
+          # blackduck_upload_sarif_report: 'true'
           # blackduck_reports_sarif_file_path: '/Users/spurohit/Downloads/report.sarif.json'
-          github_token: 'sdds'
+          # github_token: 'sdds'
           # github_token: ${{ secrets.GITHUB_TOKEN }}
